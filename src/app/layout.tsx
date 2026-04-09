@@ -11,6 +11,8 @@ const roboto = Roboto({
   display: "swap",
 });
 
+import SplashScreen from "@/components/SplashScreen";
+
 export const metadata: Metadata = {
   title: "MSquare Software - Driving Business Innovation",
   description:
@@ -41,6 +43,7 @@ export default function RootLayout({
         />
       </head>
       <body className="flex flex-col min-h-screen">
+        <SplashScreen />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
